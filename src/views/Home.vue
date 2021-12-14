@@ -96,9 +96,10 @@ export default {
   }
 
   .header {
-    grid-column: 2 / 8;
+    grid-column: 1 / 8;
     grid-row: 1 / 4;
-    font-size: 4.5vh;
+    font-size: 10vw;
+    margin-left: 1rem;
   }
 }
 </style>
