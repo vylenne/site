@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="header">
+    <div class="home__header">
       <div><p class="slide-up yellow">Frontend</p></div>
       <div><p class="slide-up">development</p></div>
       <div><p class="slide-up">and inspired</p></div>
@@ -28,7 +28,7 @@ export default {
   background-position: 250% 10%;
 }
 
-.header {
+.home__header {
   font-family: 'Syne', sans-serif;
   font-size: 15.5vh;
   line-height: 1;
@@ -36,22 +36,22 @@ export default {
   grid-row: 3 / 7;
 }
 
-.header > div {
+.home__header > div {
   cursor: default;
   overflow: hidden;
 }
 
-.header > div:nth-child(2) > p {
+.home__header > div:nth-child(2) > p {
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 
-.header > div:nth-child(3) > p {
+.home__header > div:nth-child(3) > p {
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
 }
 
-.header > div:nth-child(4) > p {
+.home__header > div:nth-child(4) > p {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
@@ -95,7 +95,7 @@ export default {
     grid-template-rows: repeat(7, 1fr);
   }
 
-  .header {
+  .home__header {
     grid-column: 1 / 8;
     grid-row: 1 / 4;
     font-size: 10vw;
