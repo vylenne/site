@@ -32,6 +32,28 @@
     </div>
     <div class="works">
       <p class="experience__header">Experience</p>
+      <div class="works__blocks">
+        <div class="work">
+          <p class="work__title">Uscreen.tv / Middle Frontend dev / Sep 2021 – present</p>
+          <p class="work__description">Created referral program for stores in uscreen.tv. Fixed
+            critical and non-critical bugs, supported the code. Studied 4 books about typography and
+            interfaces, turned knowledge into action.</p>
+        </div>
+        <div class="work">
+          <p class="work__title">Amberdata / Vue.js frontend developer / Sep 2019 - Sep 2020</p>
+          <p class="work__description">Design and development of projects related to data collection
+            and visualization. Took part in the renovation of the project, which was written on
+            Backbone and is now written entirely on Vue.js with using Vuetify.js.</p>
+        </div>
+        <div class="work">
+          <p class="work__title">MediaTarget / Frontend dev / Jul 2018 – Nov 2018</p>
+          <p class="work__description">Adaptation of the rvpn portal for the mobile version
+            (https://rusvpn.com). Developed some pages with adaptation with receiving
+            content(articles, news) from a backend on a Cryptoportal. Full cycle of creation from
+            scratches to real pages with stylus styles and page blocks according to all customer
+            constraints (with animations and prepared scripts for interaction with backend)</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -45,18 +67,29 @@ export default {
 .experience {
   width: 100%;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  grid-gap: 1rem;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.experience__header {
+  font-family: 'Syne', sans-serif;
+  font-size: 5vh;
+  grid-column: 1 / 4;
+  line-height: 1;
 }
 
 .technologies {
-  grid-column: 1 / 8;
-  grid-row: 3;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr;
+  margin-top: 5rem;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 4rem;
 }
 
 .technologies__blocks {
@@ -68,33 +101,31 @@ export default {
   font-family: 'Spartan', sans-serif;
 }
 
-.block {
-  margin-top: .5rem;
+.works__blocks {
+  grid-column: 4 / 8;
+  font-family: 'Spartan', sans-serif;
+  overflow-y: scroll;
 }
 
-.block__header {
+.block {
+  margin: .5rem 0;
+}
+
+.work {
+  margin-bottom: 2rem;
+}
+
+.block__header,
+.work__title {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
-.block__item {
+.block__item,
+.work__description {
   font-size: .875rem;
   line-height: 1.5rem;
-}
-
-.works {
-  grid-column: 1 / 8;
-  grid-row: 6;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.experience__header {
-  font-family: 'Syne', sans-serif;
-  font-size: 6vh;
-  grid-column: 1 / 4;
-  line-height: 1;
 }
 
 .yellow {
