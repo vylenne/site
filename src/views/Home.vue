@@ -23,9 +23,9 @@ export default {
   grid-template-rows: repeat(7, 1fr);
   grid-gap: 1rem;
   background-image: url(../assets/author.jpg);
-  background-size: 84%;
+  background-size: 70%;
   background-repeat: no-repeat;
-  background-position: 250% 10%;
+  background-position: 160% -140%;
 }
 
 .home__header {
@@ -67,15 +67,6 @@ export default {
 
 .blue {
   color: #2C6FF3;
-}
-
-@-webkit-keyframes slide-up {
-  0% {
-    transform: translateY(150px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 @keyframes slide-up {

@@ -33,12 +33,16 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .menu__logo {
   text-decoration: none;
   font-family: 'Syne', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   display: block;
 }
 
@@ -127,7 +131,7 @@ export default {
 
   .menu__links a {
     writing-mode: vertical-rl;
-    margin: 1rem 0;
+    margin: 1rem .5rem;
     transform:rotate(-180deg);
   }
 
