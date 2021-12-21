@@ -131,7 +131,7 @@ export default {
 
   .menu__links a {
     writing-mode: vertical-rl;
-    margin: 1rem 0;
+    margin: 1rem .5rem;
     transform:rotate(-180deg);
   }
 

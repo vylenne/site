@@ -93,7 +93,8 @@ export default {
 }
 
 .technologies__blocks {
-  grid-column: 4 / 8;
+  margin-right: 4rem;
+  grid-column: 4 / 9;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -136,4 +137,36 @@ export default {
   color: #2C6FF3;
 }
 
+@media screen and (max-width: 500px) {
+  .experience {
+    padding: 0 1rem;
+  }
+  .technologies,
+  .works {
+    grid-template-columns: 1fr;
+  }
+
+  .works {
+    margin-top: 2.5rem;
+  }
+
+  .experience__header {
+    grid-column: 1;
+    margin-bottom: 1rem;
+  }
+
+  .works__blocks {
+    margin-right: 0;
+    grid-column: 1;
+  }
+
+  .technologies__blocks {
+    grid-column: 1;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .work__title {
+    margin-right: 4rem;
+  }
+}
 </style>

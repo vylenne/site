@@ -170,18 +170,19 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
+  .contact {
+    margin-left: 1rem;
+  }
   .contact__header {
     grid-column: 1 / 8;
     grid-row: 4;
     font-size: 8vw;
-    margin-left: 1rem;
   }
 
   .contact__links {
     grid-row: 6;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin-left: 1rem;
   }
 
   .link {
